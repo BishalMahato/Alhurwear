@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alhur Podcast</title>
+  <meta name="description" content="Follow Alhur Podcast on social media." />
+  <style>
+    :root {
+      --bg1: #111827;
+      --bg2: #1f2937;
+      --card: rgba(255, 255, 255, 0.08);
+      --text: #ffffff;
+      --muted: #d1d5db;
+      --shadow: rgba(0, 0, 0, 0.25);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, var(--bg1), var(--bg2));
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 440px;
+      background: var(--card);
+      backdrop-filter: blur(10px);
+      border-radius: 24px;
+      padding: 32px 24px;
+      text-align: center;
+      box-shadow: 0 12px 30px var(--shadow);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .logo {
+      width: 92px;
+      height: 92px;
+      border-radius: 50%;
+      margin: 0 auto 16px;
+      background: rgba(255, 255, 255, 0.12);
+      display: grid;
+      place-items: center;
+      font-size: 34px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 30px;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .links {
+      display: grid;
+      gap: 12px;
+    }
+
+    .link {
+      display: block;
+      text-decoration: none;
+      color: white;
+      padding: 14px 18px;
+      border-radius: 14px;
+      font-weight: 700;
+      transition: transform 0.15s ease, filter 0.15s ease;
+    }
+
+    .link:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.05);
+    }
+
+    .instagram { background: #e1306c; }
+    .facebook { background: #1877f2; }
+    .tiktok { background: #111111; }
+    .youtube { background: #ff0000; }
+
+    .footer {
+      margin-top: 22px;
+      font-size: 13px;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="logo">A</div>
+    <h1>Alhur Podcast</h1>
+    <p>Follow us on social media and stay connected with our latest content.</p>
+
+    <div class="links">
+      <a class="link instagram" href="https://www.instagram.com/_alhurpodcast" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a class="link facebook" href="https://www.facebook.com/share/1BD4uWpwQq/" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a class="link tiktok" href="https://www.tiktok.com/@_alhurpodcast" target="_blank" rel="noopener noreferrer">TikTok</a>
+      <a class="link youtube" href="https://youtube.com/@alhurpodcast" target="_blank" rel="noopener noreferrer">YouTube</a>
+    </div>
+
+    <div class="footer">Scan the QR code to open this page</div>
+  </main>
+</body>
+</html>
